@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://urpgstatic.com/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3feef57c63.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="container_principal">
+        <div class="logo">
+            <img src="images/Logo.png" alt="">
+        </div>
+        <div class="card">
+            <div class="pokedex">
+                <div class="pokedex__left">
+                    <div class="top">
+                        <div class="top__circles">
+                            <div class="circles__medium"></div>
+                            <div class="circles__small">
+                                <div class="circle__small"></div>
+                                <div class="circle__small"></div>
+                                <div class="circle__small"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <div class="display__center">
+                            <div class="name">
+                                <h1 class="name__pokemon"></h1>
+                            </div>
+                            <div class="image">
+                                <img class="image__pokemon">
+                            </div>
+                            <div class="stats">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="buttons">
+                            <div class="circles__medium circle__medium-modified"></div>
+                            <div class="rectangle" id="preview">
+                                <i class="fa-solid fa-angle-left arrow"></i>
+                            </div>
+                            <div class="rectangle rectangle-modified" id="next">
+                                <i class="fa-solid fa-angle-right arrow"></i>
+                            </div>
+                        </div>
+                        <div class="searchBar">
+                            <input type="text" name="PokemonName" id="name" autocomplete="none" placeholder="Busca un pokémon" spellcheck="false">
+                            <input type="button" value="" id="btn__search">
+                        </div>
+                    </div>
+                </div>
+                <div class="pokedex__right"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
