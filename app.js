@@ -29,7 +29,7 @@ const pintarCard = (data) => {
         speed : `<p class="stat__pokemon"> <span>Speed: </span> ${data.stats[5].base_stat}</p>`
     }
     NAME_POKEMON.textContent = data.forms[0].name;
-    IMAGE_POKEMON.setAttribute('src', data.sprites.front_default);
+    IMAGE_POKEMON.setAttribute('src', data.sprites.other["official-artwork"].front_default);
     STATS.innerHTML = stats.hp + stats.attack + stats.defense + stats.special_attack + stats.special_defense + stats.speed;
 }
 
